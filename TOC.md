@@ -50,7 +50,7 @@
    * [不用标准库](not-use-lib.md)
    * [虚变量](dummy-var.md)
    * [函数在调用代码前定义](function-before-use.md)
-   * [抵制使用module(not-use-module.md)
+   * [抵制使用module()函数来定义Lua模块](not-use-module.md)
    * [点号与冒号操作符的区别](dot-diff.md)
 * [测试](test.md)
    * [单元测试](unittest.md)
