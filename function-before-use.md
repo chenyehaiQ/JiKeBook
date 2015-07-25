@@ -1,5 +1,5 @@
 # 函数在调用代码前定义
-Lua里面的函数必须放在调用的代码之前，下面的代码是一个常见的错误：
+Lua 里面的函数必须放在调用的代码之前，下面的代码是一个常见的错误：
 
 ```lua
 local i = 100
@@ -16,7 +16,7 @@ end
 
 ---
 
-为什么放在调用后面就找不到呢？原因是Lua里的function 定义本质上是变量赋值，即
+为什么放在调用后面就找不到呢？原因是 Lua 里的 function 定义本质上是变量赋值，即
 ```lua
 function foo() ... end
 ```
@@ -24,11 +24,11 @@ function foo() ... end
 ```lua
 foo = function () ... end
 ```
-因此在函数定义之前使用函数相当于在变量赋值之前使用变量，自然会得到nil的错误。
+因此在函数定义之前使用函数相当于在变量赋值之前使用变量，自然会得到 nil 的错误。
 
 ---
 
-一般地，由于全局变量是每请求的生命期，因此以此种方式定义的函数的生命期也是每请求的。为了避免每请求创建和销毁Lua closure的开销，建议将函数的定义都放置在自己的Lua module中，例如：
+一般地，由于全局变量是每请求的生命期，因此以此种方式定义的函数的生命期也是每请求的。为了避免每请求创建和销毁 Lua closure 的开销，建议将函数的定义都放置在自己的 Lua module 中，例如：
 
 ```lua
 -- my_module.lua
@@ -38,7 +38,7 @@ function foo()
 end
 ```
 
-然后，再在content\_by\_lua\_file指向的.lua文件中调用它：
+然后，再在 content\_by\_lua\_file 指向的.lua 文件中调用它：
     
 
 ```lua
@@ -46,4 +46,4 @@ local my_module = require "my_module"
 my_module.foo()
 ```
 
-因为Lua module只会在第一次请求时加载一次（除非显式禁用了lua\_code\_cache配置指令），后续请求便可直接复用。
+因为 Lua module 只会在第一次请求时加载一次（除非显式禁用了 lua\_code\_cache 配置指令），后续请求便可直接复用。
