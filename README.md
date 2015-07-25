@@ -1,4 +1,4 @@
-OpenResty 最佳实践
+﻿OpenResty 最佳实践
 =======
 
 在 2012 年的时候，我加入到奇虎 360 公司，为新的产品做技术选型。由于之前一直混迹在 python 圈子里面，也接触过 nginx c 模块的高性能开发，一直想找到一个兼备 python 快速开发和 nginx c 模块高性能的产品。看到 OpenResty 后，有发现新大陆的感觉。
@@ -14,4 +14,4 @@ OpenResty 最佳实践
 希望你能 enjoy OpenResty 之旅！
 
 本书源码在 Github 上维护，欢迎参与：[github 地址](https://github.com/moonbingbing/openresty-best-practices)。也可以加入 QQ 群来和我们交流：
-![openresty 技术交流群](qq-group.png)
+![openresty 技术交流群](images/qq-group.png)
