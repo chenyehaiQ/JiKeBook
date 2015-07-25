@@ -64,7 +64,7 @@
    * [协议无痛升级](switch-protocol.md)
    * [代码规范](code-style.md)
    * [连接池](conn-pool.md)
-   * [c10 k 编程](c10 k.md)
+   * [c10 k 编程](c10k.md)
    * [TIME_WAIT 问题](time-wait.md)
    * [docker](docker.md)
 * [火焰图](flame-graph.md)
